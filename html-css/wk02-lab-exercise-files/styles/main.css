@@ -1,0 +1,31 @@
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+/* the styles for the header */
+header img {
+	float: left;
+}
+
+/* the styles for the section */
+main {
+	clear: left;
+}
+
+h2 {
+	font-size: 170%;
+	color: #800000;
+	margin-left: 30px;
+}
+
+h3 {
+	font-size: 130%;
+	font-style: italic;
+	margin-left: 30px;
+}
+
+
+
+/* the styles for the footer */
