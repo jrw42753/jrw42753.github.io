@@ -48,6 +48,10 @@ header img {
 	text-shadow: 2px 2px 2px #800000;
 }
 /* the styles for the navigation menu */
+#mobile_menu {
+	display: none;
+}
+
 #nav_menu ul {
 	list-style-type: none;
 	margin: 0;
@@ -178,7 +182,7 @@ footer p {
 }
 
 
-@media only screen and (min-width: 959px) {
+@media only screen and (max-width: 959px) {
 	h1{
 		font-size: 135%;
 	}
@@ -190,13 +194,26 @@ footer p {
 	}
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (max-width: 767px) {
 	header img {
 		float:none;
 	}
 
 	header {
 		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		font-size: 90%;
+	}
+	#mobile_menu {
+		display: block;
+		background-color: #800000;
+	}
+	#nav_menu {
+		display: none;
 	}
 }
 
