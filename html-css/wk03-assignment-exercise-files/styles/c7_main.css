@@ -18,9 +18,7 @@ body {
 a:focus, a:hover {
 	font-style: italic;
 }
-ul a {
-	
-}
+
 /* the styles for the header */
 header {
 	padding: 1.5em 0 2em 0;
@@ -44,7 +42,7 @@ header h3 {
 }
 header img {
 	float: left;
-	padding: 0 30px;
+	padding: 0px 3.75%;
 }
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
@@ -58,10 +56,10 @@ header img {
 }
 #nav_menu ul li {
 	float: left;
+	width: 20%;
 }
 #nav_menu ul li a {
     display: block;
-    width: 160px;
     text-align: center;
     padding: 1em 0;
     text-decoration: none;
@@ -72,6 +70,7 @@ header img {
 #nav_menu a.current {
 	color: yellow;
 }
+
 #nav_menu ul ul {
     display: none;
     position: absolute;
@@ -96,9 +95,9 @@ main {
 
 /* the styles for the section */
 section {
-	width: 525px;
-	float: right;
-	padding: 0 20px 20px 20px;
+	width: 95%;
+	float: none;
+	padding: 0px 20px 2.5% 2.5%;
 }
 section h1 {
 	font-size: 150%;
@@ -142,13 +141,15 @@ article img {
 	float: right;
 	margin: .5em 0 1em 1em;
 	border: 1px solid black;
+	max-width: 30%;
+	min-width: 150px;
 }
 
 /* the styles for the aside */
 aside {
-	width: 215px;
-	float: right;
-	padding: 0 0 20px 20px;
+	width: 95%;
+	float: none;
+	padding: 0px 2.5% 2.5% 2.5%;
 }
 aside h2 {
 	color: #800000;
@@ -175,3 +176,31 @@ footer p {
 	color: white;
 	padding: 1em 0;
 }
+
+
+@media only screen and (min-width: 959px) {
+	h1{
+		font-size: 135%;
+	}
+	section h2{
+		font-size: 120%;
+	}
+	aside h2{
+		font-size: 120%;
+	}
+}
+
+@media only screen and (min-width: 767px) {
+	header img {
+		float:none;
+	}
+
+	header {
+		text-align: center;
+	}
+}
+
+.asidecolumn {
+	column-count: 2;
+}
+
