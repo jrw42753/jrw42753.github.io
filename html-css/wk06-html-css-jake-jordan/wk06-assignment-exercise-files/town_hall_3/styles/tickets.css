@@ -81,10 +81,9 @@ form input {
 }
 
 
-input:focus {
+input[type=text]:focus {
 	/*transition: border 2s ease-in 1s;*/
 	border: 10px solid #00FFFF;
-	background-color: #00FFFF
 }
 
 input:invalid {
